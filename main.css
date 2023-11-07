@@ -1,0 +1,83 @@
+body{
+    font-family: Roboto,sans-serif;
+}
+
+.navbar {
+    background-color: rgb(236, 157, 53);
+}
+
+#cabecario .nav .nav-link.active{
+    background-color: rgb(255, 255, 255);
+    color:rgb(236, 157, 53);
+}
+
+#cabecario .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cafe-da-manha .nav-link.active:hover {
+    color: white;
+}
+
+.navbar-toggler{
+    background-color: rgb(255, 255, 255);;
+}
+
+header{
+    background-color: antiquewhite;  
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header h1{
+    font-family: 'Pacifico',cursive;
+}
+
+.carosel{
+    margin-top: 10px;
+}
+
+#sobre h1{
+    margin-top: 10px;
+    font-family: 'Pacifico',cursive;
+}
+
+.section-title{
+    font-family: 'Pacifico',sans-serif;
+    color:rgb(236, 157, 53);
+}
+
+section #sobre{
+    background-color: antiquewhite;
+}
+
+section#quartos {
+    background-color:rgba(236, 157, 53, 0.6);
+}
+
+.nav-cafe-da-manha .nav-link.active {
+    background-color:rgb(236, 157, 53);
+}
+
+.nav-cafe-da-manha .nav-link:hover,
+#fale-conosco button{
+    background-color:rgb(236, 157, 53);
+    color: white;
+}
+
+.text-colored {
+    color: rgb(228, 148, 43);
+}
+
+#cafe-da-manha{
+    background-color: rgb(255, 255, 255);
+}
+
+section#fale-conosco{
+    background-color:rgba(236, 157, 53, 0.6);
+}
+
+.social-links{
+    list-style: none;
+}

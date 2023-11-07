@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecario" class="navbar navbar-expand-lg sticky-top p-3">
+        <div class="container">
+            <h1 class="navbar-brand m-0 ">Hotel Strap</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">                   
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold me-1">
+                        <a href="#sobre" class="nav-link active">
+                            <i class="bi bi-book"></i>
+                            Sobre</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#quartos" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Quarto
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cafe-da-manha" class="nav-link">
+                            <i class="bi bi-cup-hot me-1"></i>                            
+                            Cafe Da Manha</a>
+                    </li>
+                    <li class="nav-item fw-bool me-1"></li>
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-telephone me-1"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>      
+    </header>
+    <div id="carosel">
+        <div id="carousel-exemplo"class="carousel  slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="2500" class="carousel-item active">
+                        <img class="d-block w-100 " src="https://www.kayak.com.br/rimg/himg/90/d7/74/hotelsdotcom-75983-0d2b7b-041447.jpg?width=1366&height=768&crop=true" alt="Entrada">
+                    </div>
+                    <div data-bs-interval="2500" class="carousel-item">
+                        <img class="d-block w-100 " src="https://www.kayak.com.br/rimg/himg/10/07/41/hotelsdotcom-560027-c52080e5_w-681194.jpg?width=1366&height=768&crop=true" alt="visao do drone">
+                    </div>
+                    <div data-bs-interval="2500" class="carousel-item">
+                        <img class="d-block w-100 " src="https://www.kayak.com.br/rimg/himg/90/d7/74/hotelsdotcom-75983-0d2b7b-041447.jpg?width=1366&height=768&crop=true">
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button  data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button"data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button"data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button"data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+        </div>  
+            <div data-bs-spy="scroll" data-bs-target="cabecario">
+            <section id="sobre">
+                <div class="pt-2 pb-2">
+                    <div class="container">
+                        <div class="row">                           
+                        <div class="col-md-5">
+                            <h1 class="section-title" class="">Sobre o Hotel</h1>
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/5b/08/1c/recepcao.jpg" class="d-block w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title mt-4" >Descritivo</h2>
+                            <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, molestiae. Beatae odit quos in ab neque ipsum sit aspernatur harum, doloribus</b>
+                            <br> 
+                            <h3 class="section-title" >Lazeres</h3>
+                            <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis delectus ea facere voluptates quisquam amet exercitationem laudantium temporibus rerum labore! Vel repudiandae architecto</b>
+                            <br><br>
+                            <ul>
+                                <li>Piscina</li>
+                                <li>Churrasquira</li>
+                                <li>Quadra de Futsal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            </section>
+        <section id="quartos">
+            <div  class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                    <h2 class="section-title text-center"> Opçoes de Quarto</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://all.accor.com/magazine/imagerie/all-accor-quarto-de-hotel-de-luxo-em-casa-sofitel-7942.jpg" alt="mesa" class="d-block w-100 rownded">
+                            <h3 class="section-title">Quartos Com Varanda</h3>
+                            <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ali</b>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://all.accor.com/magazine/imagerie/all-accor-quarto-de-hotel-de-luxo-em-casa-sofitel-7942.jpg" alt="mesa" class="d-block w-100 rownded">
+                            <h3 class="section-title">Quartos Com Varanda</h3>
+                            <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ali</b>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://all.accor.com/magazine/imagerie/all-accor-quarto-de-hotel-de-luxo-em-casa-sofitel-7942.jpg" alt="mesa" class="d-block w-100 rownded">
+                            <h3 class="section-title">Quartos Com Varanda</h3>
+                            <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ali</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cafe-da-manha">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mt-3 mb-3">Café Da Manha </h2>
+                </div>
+            </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-cafe-da-manha">
+                        <button type="button"  data-bs-toggle="tab" data-bs-target="#Bebidas" class="fw-bold text-start mt-2 nav-link text-colored active">Bebidas</button>
+                        <button type="button"  data-bs-toggle="tab" data-bs-target="#Frutas" class="fw-bold text-start mt-2 nav-link text-colored ">Frutas</button>
+                        <button type="button"  data-bs-toggle="tab" data-bs-target="#Paês" class="fw-bold text-start mt-2 nav-link text-colored ">Paês</button>
+                        <button type="button"  data-bs-toggle="tab" data-bs-target="#Frios" class="fw-bold text-start mt-2 nav-link text-colored ">Frios</button>                        
+                    </nav>
+                </aside>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Bebidas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://blog.coffeemais.com/wp-content/uploads/2022/01/para-que-serve-o-cafe-interna.jpg" alt="">
+                                    <h5 class="fw-bold">Cafe</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://s2-oglobo.glbimg.com/YyUC_KRFzV2nRNd8OVaN2O6iBuo=/0x0:5257x3505/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/o/M/S3B6yZQYOrjtTTBNEMLQ/copo-de-suco-de-laranja-e-uma-pessoa-espremendo-uma-laranja-nele.jpg">
+                                    <h5 class="fw-bold">Sucos</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.dooca.store/2266/files/agua-saborizada-suqueira2.jpg" alt="">
+                                    <h5 class="fw-bold">Agua Saborizada</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://conteudo.imguol.com.br/c/entretenimento/a7/2021/07/13/cha-beneficios-como-preparar-e-qual-escolher-1626224425306_v2_450x337.jpg" alt="">
+                                    <h5 class="fw-bold">Cha</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://blog.coffeemais.com/wp-content/uploads/2022/01/para-que-serve-o-cafe-interna.jpg" alt="">
+                                    <h5 class="fw-bold">Cafe</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://s2-oglobo.glbimg.com/YyUC_KRFzV2nRNd8OVaN2O6iBuo=/0x0:5257x3505/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/o/M/S3B6yZQYOrjtTTBNEMLQ/copo-de-suco-de-laranja-e-uma-pessoa-espremendo-uma-laranja-nele.jpg">
+                                    <h5 class="fw-bold">Sucos</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://cdn.dooca.store/2266/files/agua-saborizada-suqueira2.jpg" alt="">
+                                    <h5 class="fw-bold">Agua Saborizada</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://conteudo.imguol.com.br/c/entretenimento/a7/2021/07/13/cha-beneficios-como-preparar-e-qual-escolher-1626224425306_v2_450x337.jpg" alt="">
+                                    <h5 class="fw-bold">Cha</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Frutas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcS4DoJFpilpS7NtRMi-k6yiYSHKMldiQKw&usqp=CAU" alt="">
+                                    <h5 class="fw-bold">Morango</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8aTAMMurFua8PP04BVjPD0bVVSBnrZmZgew&usqp=CAU">
+                                    <h5 class="fw-bold">Mamão</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAU5sJcSkfHMyBqYV_D0Qu2UyAnaxKFSwzQQ&usqp=CAU" alt="">
+                                    <h5 class="fw-bold">Melancia</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://www.clinicameitan.com.br/wp-content/uploads/frutas-no-verao.jpg" alt="">
+                                    <h5 class="fw-bold">Abacate</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcS4DoJFpilpS7NtRMi-k6yiYSHKMldiQKw&usqp=CAU" alt="">
+                                    <h5 class="fw-bold">Morango</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8aTAMMurFua8PP04BVjPD0bVVSBnrZmZgew&usqp=CAU">
+                                    <h5 class="fw-bold">Mamão</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAU5sJcSkfHMyBqYV_D0Qu2UyAnaxKFSwzQQ&usqp=CAU" alt="">
+                                    <h5 class="fw-bold">Melancia</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://www.clinicameitan.com.br/wp-content/uploads/frutas-no-verao.jpg" alt="">
+                                    <h5 class="fw-bold">Abacate</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Paês">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://blog.praticabr.com/wp-content/uploads/2022/06/2shutterstock_619313720-1-1024x682.jpg" alt="">
+                                    <h5 class="fw-bold">Pão Frances</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://img.freepik.com/fotos-gratis/conjunto-de-varios-paes-na-superficie-da-pedra_114579-40612.jpg">
+                                    <h5 class="fw-bold">Pão em fatias</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://www.daninoce.com.br/wp-content/uploads/2020/05/paes-destaque-960x625.jpg" alt="">
+                                    <h5 class="fw-bold">Pão Integral</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://s2-redeglobo.glbimg.com/acvh8Ft2argekBJYXmaMWG-voVw=/0x0:1000x666/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2021/R/w/3RlpBzTBKTLyQIoHv07g/condor-22-tabua-de-frios.jpg" alt="">
+                                    <h5 class="fw-bold">Quarta Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://blog.praticabr.com/wp-content/uploads/2022/06/2shutterstock_619313720-1-1024x682.jpg" alt="">
+                                    <h5 class="fw-bold">Pão Frances</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://img.freepik.com/fotos-gratis/conjunto-de-varios-paes-na-superficie-da-pedra_114579-40612.jpg">
+                                    <h5 class="fw-bold">Pão em fatias</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://www.daninoce.com.br/wp-content/uploads/2020/05/paes-destaque-960x625.jpg" alt="">
+                                    <h5 class="fw-bold">Pão Integral</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://www.mimoscestasepresentes.com.br/image/cache/data/10111---paes-de-queijo-c-4-und--01-2023-08-05-17-02-22-926x926.jpg" alt="">
+                                    <h5 class="fw-bold">Pão de queijo</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Frios">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://blog.livup.com.br/wp-content/uploads/2021/10/tabua-de-frios-principal.jpg" alt="">
+                                    <h5 class="fw-bold">Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://www.tuacasa.com.br/wp-content/uploads/2019/04/mesa-de-frios-00.jpg">
+                                    <h5 class="fw-bold">Segunda Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://i.pinimg.com/736x/3d/1c/c4/3d1cc4198672eab35bef831006d9e5d0.jpg" alt="">
+                                    <h5 class="fw-bold">Terceira Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://s2-redeglobo.glbimg.com/acvh8Ft2argekBJYXmaMWG-voVw=/0x0:1000x666/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2021/R/w/3RlpBzTBKTLyQIoHv07g/condor-22-tabua-de-frios.jpg" alt="">
+                                    <h5 class="fw-bold">Quarta Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://blog.livup.com.br/wp-content/uploads/2021/10/tabua-de-frios-principal.jpg" alt="">
+                                    <h5 class="fw-bold">Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://www.tuacasa.com.br/wp-content/uploads/2019/04/mesa-de-frios-00.jpg">
+                                    <h5 class="fw-bold">Segunda Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://i.pinimg.com/736x/3d/1c/c4/3d1cc4198672eab35bef831006d9e5d0.jpg" alt="">
+                                    <h5 class="fw-bold">Terceira Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="https://s2-redeglobo.glbimg.com/acvh8Ft2argekBJYXmaMWG-voVw=/0x0:1000x666/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2021/R/w/3RlpBzTBKTLyQIoHv07g/condor-22-tabua-de-frios.jpg" alt="">
+                                    <h5 class="fw-bold">Quarta Tabua</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale Conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Nome</label>
+                                <input type="text" id="nome" class="form-control" required >
+                            </div>
+                            <div class="mb-3">
+                                <label for="E-mail"  class="form-label fw-bold text-colored">E-mail</label>
+                                <input type="email" id="email" class="form-control" required >
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone"  class="form-label fw-bold text-colored">Telefone</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem"  class="form-label fw-bold text-colored">Fale com nosco</label>
+                                <textarea class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button> 
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">Redes Sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">Endereço</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa similique, in aperiam enim non repudiandae nisi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
